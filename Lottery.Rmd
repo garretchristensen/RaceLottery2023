@@ -7,7 +7,7 @@ runtime: shiny
 ---
 ## Background
 
-Welcome to the High Lonesome 2023 Lottery. This lottery is run with code written by Garret Christensen. The code is available on GitHub [here](http://www.github.com/garretchristensen/RaceLottery2023). The intent with using Github is to make the entire process transparent and reproducible. If you speak R, please check it out!
+Welcome to the High Lonesome 2023 Lottery. This lottery is run with code written by ultra-marathoner/economist/nerd [Garret Christensen](http://garrettheonion.blogspot.com). The code is available on GitHub [here](http://www.github.com/garretchristensen/RaceLottery2023). The intent with using Github is to make the entire process transparent and reproducible. If you speak R, or want to help me improve the graphical interface, please check it out!
 
 ## Lottery Design Choices
 The 2022 lottery is picking 63 men, 68 women, a 75-men waitlist, and a 75-women waitlist from the 547 total applicants (153 women, 394 men). 
