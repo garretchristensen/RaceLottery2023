@@ -10,7 +10,7 @@ runtime: shiny
 Welcome to the High Lonesome 2023 Lottery. This lottery is run with code written by Garret Christensen. The code is available on GitHub [here](http://www.github.com/garretchristensen/RaceLottery2023). The intent with using Github is to make the entire process transparent and reproducible. If you speak R, please check it out!
 
 ## Lottery Design Choices
-The 2022 lottery is picking 63 men, 68 women, a 75 person male waitlist, and a 75 person women waitlist from the 547 total applicants (153 women, 394 men). 
+The 2022 lottery is picking 63 men, 68 women, a 75-men waitlist, and a 75-women waitlist from the 547 total applicants (153 women, 394 men). 
 
 The general goals of the lottery are as follows:
 
@@ -91,8 +91,8 @@ shinyApp(
 ui<-fluidPage(
   htmltools::includeMarkdown("./markdown/justtellmetheodds.md"),
   fluidRow(
-  column(6, sliderInput("apps", label = h5("Previous applications"), min=0, max=10, value = 0)),
-  column(6, sliderInput("finishes", label = h5("Previous Finishes"), min=0, max=4, value = 0)),
+  column(6, sliderInput("apps", label = h5("Previous applications"), min=0, max=5, value = 0)),
+  column(6, sliderInput("finishes", label = h5("Previous Finishes"), min=0, max=5, value = 0)),
   column(6, sliderInput("volunteer", label = h5("Volunteer Shifts"), min=0, max=30, value = 0)),
   column(6, sliderInput("trailwork", label = h5("Extra Trailwork"), min=0, max=10, value = 0))
   ),
