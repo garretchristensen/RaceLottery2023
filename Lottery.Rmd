@@ -149,8 +149,8 @@ nw<-input$Nw #SET THE TOTAL NUMBER TO PICK
 
 ######################################################################
 #FOR 2022 JUST SET HOW MANY TO PICK
-n_women_pick <- 66
-n_men_pick <- 62
+n_women_pick <- 68
+n_men_pick <- 63
       
 ######################################################################
 #DETERMINE TICKETS FROM THE DATA
@@ -227,7 +227,7 @@ women<-df[which(df$Gender=="F"),]
   n_men_waitlist_pool<-nrow(men_waitlist_pool)
     
   #SIMPLER THIS YEAR, JUST ENTER THE NUMBERS FOR THE WL, 8 and 7
-  n_women_wait_pick<-42
+  n_women_wait_pick<-75
   n_men_wait_pick<-75
   
   #PICK THE WAITLISTERS

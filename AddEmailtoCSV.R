@@ -3,13 +3,13 @@
 #RUN THIS CODE AFTER THE SEED IS KNOWN
 
 
-set.seed(-516292285) #SET THE SEED WITH DICE!
+set.seed(-123456789) #PUT IN THE REAL SEED!
 
 
 library(dplyr)
 library(tibble)
 library(readxl)
-temp<-read.csv("./2022HL100_lotteryentrants_final.csv", stringsAsFactors = FALSE) #LOAD THE DATA
+temp<-read.csv("./2023 HiLo lottery data_PROVISIONAL.csv", stringsAsFactors = FALSE) #LOAD THE DATA
 df<-as_tibble(temp)
 
 df$fullname<-paste(df$First_Name, df$Last_Name, sep=" ", collapse = NULL)
@@ -18,8 +18,8 @@ n_men_app=nrow(men<-df[which(df$Gender=="M"),])
 n_women_app=nrow(women<-df[which(df$Gender=="F"),])
 
 
-n_women_pick <- 66
-n_men_pick <- 62
+n_women_pick <- 68
+n_men_pick <- 63
 
 
 df$Applications<-df$Previous_Applications
@@ -135,7 +135,7 @@ men_waitlist_pool<-anti_join(men, men_winners)
 n_men_waitlist_pool<-nrow(men_waitlist_pool)
 
 #SIMPLER THIS YEAR, JUST ENTER THE NUMBERS FOR THE WL, 8 and 7
-n_women_wait_pick<-42
+n_women_wait_pick<-75
 n_men_wait_pick<-75
 
 #PICK THE WAITLISTERS
@@ -188,8 +188,8 @@ temp <- bind_rows(w_output_wait, m_output_wait)
 #ADD EMAILS TO THE OUTPUT FOR CALEB ONLY
 ################################
 private_winners <- bind_rows(women_winners, men_winners)
-write.csv(private_winners, ".\\HL2022Winners.csv")
+write.csv(private_winners, ".\\HL2023Winners.csv")
 
 private_pools <-bind_rows(women_waiters, men_waiters)
 private_waiters <- left_join(temp, private_pools, by=c("Waitlisted_Name"="fullname"))
-write.csv(private_waiters, ".\\HL2022Waitlist.csv")
+write.csv(private_waiters, ".\\HL2023Waitlist.csv")
