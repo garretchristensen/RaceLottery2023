@@ -10,7 +10,7 @@ runtime: shiny
 Welcome to the High Lonesome 2023 Lottery. This lottery is run with code written by ultra-marathoner/economist/nerd [Garret Christensen](http://garrettheonion.blogspot.com). The code is available on GitHub [here](http://www.github.com/garretchristensen/RaceLottery2023). The intent with using Github is to make the entire process transparent and reproducible. If you speak R, or want to help me improve the graphical interface, please check it out!
 
 ## Lottery Design Choices
-The 2022 lottery is picking 63 men, 68 women, a 75-men waitlist, and a 75-women waitlist from the 547 total applicants (153 women, 394 men). 
+The 2023 lottery is picking 63 men, 68 women, a 75-men waitlist, and a 75-women waitlist from the 547 total applicants (153 women, 394 men). 
 
 The general goals of the lottery are as follows:
 
@@ -30,7 +30,7 @@ So here are the activities for which we will award points:
 
 ### Chosen Model
 
-Statistically, getting equal numbers of men and women is easy---just divide the race cap in half and draw separately. The number of slots drawn in 2022 is slightly different because of volunteer slots, sponsor slots etc. (See the [race website](https://www.highlonesome100.com/general-registration-info) for a complete listing). The rest is a bit more complicated, but we've chosen the following weighting method: 
+Statistically, getting equal numbers of men and women is easy---just divide the race cap in half and draw separately. The number of slots drawn in 2023 is slightly different because of volunteer slots, sponsor slots etc. (See the [race website](https://www.highlonesome100.com/general-registration-info) for a complete listing). The rest is a bit more complicated, but we've chosen the following weighting method: 
 
 Tickets=2^(n+k+1)+2ln(v+t+1) where n, k, v, and t are defined as follows:
 
