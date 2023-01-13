@@ -1,7 +1,7 @@
 ---
 title: "High Lonesome 2023 Lottery"
 author: "Garret Christensen"
-date: "January 11, 2023"
+date: "January 12, 2023"
 output: html_document
 runtime: shiny
 ---
@@ -59,7 +59,7 @@ library(markdown)
 
 #I COULD MAKE THIS AN INTERACTIVE PART TOO LATER
 
-temp<-read.csv("./2023 HiLo lottery data_noemail.csv", stringsAsFactors = FALSE) #LOAD THE DATA
+temp<-read.csv("./2023 HiLo lottery data_FINALnoemail.csv", stringsAsFactors = FALSE) #LOAD THE DATA
 df<-as_tibble(temp)
 #THERE IS SOME STUPID NON-ASCII CHARACTER BEGINNING-OF-FILE 
 #NONSENSE GOING ON HERE
